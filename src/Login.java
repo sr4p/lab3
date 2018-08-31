@@ -14,8 +14,12 @@ public class Login {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(null, txtUserLogin.getText() + " " + new String(pwdUserPassword.getPassword()));
+                JOptionPane.showMessageDialog(null,txtUserLogin.getText() + " "
+                        + new String(pwdUserPassword.getPassword()));
+
             }
         });
+
         btnClear.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
